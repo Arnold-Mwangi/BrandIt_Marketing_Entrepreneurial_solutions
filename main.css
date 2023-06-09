@@ -1,0 +1,29 @@
+header{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header_menu{
+    display: flex;
+    justify-content: space-between;
+}
+.company_logo{
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header_menu > div{
+    flex-direction: row;
+}
+.nav_menu_items ul{
+    list-style-type: none;
+    padding: 5px;
+}
+.nav_menu_items li{
+    float: left;
+    padding: 5px;
+    font-size: large;
+    
+}
+
+#video_background{
+    position: relative;
+    z-index: -1;
+}
