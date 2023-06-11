@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrandIt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./main.css">
+   
 </head>
 <body>
     <!--Including header-->
@@ -36,47 +38,76 @@
     </header>
     <div class="container">
         <div class="main">
+            <div class="hero-video">
+                <video id="video_background" autoplay muted loop>
+                    <source src="./sources/videos/hero.mov" type="video/mp4">
+                </video>
+            </div>
             <div class="hero_section">
-                <div class="hero-video">
-                    <video id="video_background" autoplay muted loop>
-                        <source src="./sources/videos/hero.mov" type="video/mp4">
-                    </video>
-                </div>
-                <div class="quick_links">
-                    <h3>Quick links</h3>
-                    <ul>
-                        <li><div class="quick_link_item">Discover</div></li>
-                        <li><div class="quick_link_item">EXisting Brands</div></li>
-                        <li><div class="quick_link_item">Existing Shops</div></li>
-                        <li><div class="quick_link_item">Marketing</div></li>
-                        <li><div class="quick_link_item">Success Stories</div></li>
-                    </ul>
-                </div>
-                <div class="hero_media_asset"></div>e
-                <div class="hero_content">
-                    <div><h1 class="hero_content_text_h1">Discover Exceptional Services to Elevate Your Business Success</h1></div>
-                    <div><h2 class="hero_content_text_h2">Join millions of entrepreneurs and agencies worldwide who rely on our platform to find the best services for their business success.</h2></div>                    
-                </div>
-                <div class="search">
-                    <input type="search" name="search" id="search" class="search_input" placeholder="search...">
-                </div>
-                <div class="trending_searches">
-                    <h2>Trending Searches</h2>
-                    <ul>
-                        <div class="most_searched_item">
-                            <li><a href="#">promote my products</a></li>
+               
+                <div class="hero_content_area">
+                    <div class="quick_links">                    
+                        <ul>
+                            <li><div class="quick_link_item">Discover</div></li>
+
+                            <li><div class="quick_link_item">EXisting Brands</div></li>
+                            <li><div class="quick_link_item">Existing Shops</div></li>
+                            <li><div class="quick_link_item">Marketing</div></li>
+                            <li><div class="quick_link_item">Success Stories</div></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hero_content">
+                        <div class="content_title">
+                            <h1 class="hero_content_text_h1">Discover Exceptional Services to Elevate Your Business Success</h1>
                         </div>
-                        <div class="most_searched_item">
-                            <li><a href="#">start a brand</a></li>
+                        <div class="content_message">
+                            <p class="hero_content_text_h2">Join millions of entrepreneurs and agencies worldwide who rely on our platform to find the best services for their business success.</p>
+                        </div>                    
+                    </div>
+                    <div class="hero_content_search">
+                        
+                        <div class="search">                           
+                            <input type="search" name="search" id="search" class="search_input" placeholder="search...">
+                            <i class="fas fa-search icon"></i>
                         </div>
-                        <div class="most_searched_item">
-                            <li><a href="#">Market my sales</a></li>
+                        <div class="trending_searches">
+                            <p>Trending Searches</p>
+                            <ul>
+                                
+                                    <li>
+                                        <div class="most_searched_item">
+                                            <a href="#">promote my products</a>
+                                        </div>
+                                    </li>                              
+                                
+                                    <li>
+                                        <div class="most_searched_item">
+                                            <a href="#">start a brand</a>
+                                        </div>
+                                    </li>                               
+                                
+                                    <li>
+                                        <div class="most_searched_item">
+                                            <a href="#">Market my sales</a>
+                                        </div>
+                                    </li>
+                                
+                                
+                                    <li>
+                                        <div class="most_searched_item">
+                                           <a href="#">My sales Analytics
+
+                                           </a>
+                                        </div>
+                                </li>
+                                
+                            </ul>
                         </div>
-                        <div class="most_searched_item">
-                            <li><a href="#">My sales Analytics</a></li>
-                        </div>
-                    </ul>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </div>

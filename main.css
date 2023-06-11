@@ -1,34 +1,153 @@
+@font-face{
+    font-family: 'customFont';
+    src: url('./sources/fonts/Tilt_Prism/static/TiltPrism-Regular.ttf') format('truetype');
+}
 header{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: sticky;
+    top: 0;
 }
 .header_menu{
     display: flex;
-    justify-content: space-between;
+    
 }
 .company_logo{
-    font-weight: bolder;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-family: 'CustomFont', sans-serif;
+    color: rgba(250, 0, 0, 0.664);
 }
 .header_menu > div{
     flex-direction: row;
+    
+}
+.nav_menu_items{
+
 }
 .nav_menu_items ul{
     list-style-type: none;
-    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 .nav_menu_items li{
     float: left;
-    padding: 5px;
-    font-size: large;
+    padding: 10px;
+    margin-top: 10px;
+    
     
 }
 .main{
     position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden
+    ;
+    color: aliceblue;
+}
+.hero_section{
+    max-width: 900px;
+    
+    margin:0 auto;
+}
+.hero_content_area{
+    margin-top: 50px;
+}
+.quick_links{
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.quick_links ul{
+    list-style-type: none;
+}
+.quick_links li{
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+
+}
+.quick_link_item{
+    border-radius: 25px;
+    background-color: rgba(250, 0, 0, 0.664);
+    padding: 12px;
+    margin-right: 40px;
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.content_title,
+.content_message{
+    text-align: center;
+    max-width: 600px;
+}
+.hero_content_search{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.search i{
+    position: absolute
+}
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+.search_input{
+    width: 50%;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 10px 10px 50px;
+    
+}
+.search_input:focus{
+    
+    border: 2px solid blue; /* Example border color */
+    box-shadow: 0 0 5px blue;
 }
 
-.quick_links{
-    position:absolute;
+.search_input::placeholder{
+    color:rgba(250, 0, 0, 0.664);
+    text-shadow: 0cqi;
+    font-style: italic;
 }
+.trending_searches{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trending_searches ul{
+    list-style-type: none;
+}
+.trending_searches li{
+    float: left;
+    border-radius: 25px;
+    background-color: rgba(250, 0, 0, 0.664);
+    padding: 12px;
+    margin-right: 40px;
+}
+.most_searched_item a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
 
 #video_background{
     position: absolute;
