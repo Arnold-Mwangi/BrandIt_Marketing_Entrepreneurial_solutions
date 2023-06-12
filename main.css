@@ -2,11 +2,12 @@
     font-family: 'customFont';
     src: url('./sources/fonts/Tilt_Prism/static/TiltPrism-Regular.ttf') format('truetype');
 }
+body{
+    background-color: rgba(0, 0, 0, 0.19);
+}
 header{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+
   
 }
 .header_menu{
@@ -37,35 +38,42 @@ header{
     
     
 }
-.container{
-    
-}
+
 .main{
     position: relative;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);    
     color: aliceblue;
 }
+#video_background{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
 .hero_section{
     max-width: 900px;
     
     margin:0 auto;
 }
-.hero_content_area{
-    margin-top: 50px;
-}
+
 .quick_links{
     
     display: flex;
     justify-content: center;
     align-content: center;
+    
 }
 .quick_links ul{
     list-style-type: none;
 }
 .quick_links li{
     float: left;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 10px;
     
 
@@ -147,21 +155,64 @@ header{
     text-decoration: none;
     color:aliceblue;
 }
-
-
-#video_background{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    object-fit: cover;
+.section_2{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus_sections{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mission{
+    background-image: url(./sources/images/miss.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mission_content{
     height: 100%;
-    top: 0;
-left: 0;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.mission h1{
+    margin: 0;
+    padding: 0;
+    
+}
+hr{
+    color: rgba(250, 0, 0, 0.664);
+}
+.mission p{margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    
+    color: aliceblue;
+}
+.aboutus_links{
+    position: relative;
+    display: flex;
+}
+.aboutus_links a{
+    text-decoration: none;
 
 }
-
-
-object-fit: cover;
-position: absolute;
-top: 0;
-left: 0;
+.aboutus_links ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.aboutus_links li{
+    display: inline;
+    float: left;
+    padding: 10px;
+    background-color: rgba(250, 0, 0, 0.664);
+    border-radius: 25px;
+    color: white;
+    margin-right: 10px;
+}
