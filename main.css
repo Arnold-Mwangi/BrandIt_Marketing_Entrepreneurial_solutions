@@ -111,11 +111,12 @@ header{
     width: 100%;
 }
 .search i{
-    position: absolute
+    position: absolute;
 }
 .icon {
     padding: 10px;
     min-width: 40px;
+    color: rgba(250, 0, 0, 0.664);
 }
 .search_input{
     width: 50%;
